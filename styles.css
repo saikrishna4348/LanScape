@@ -82,7 +82,7 @@ body {
 .hero-bg-fullscreen {
     background: linear-gradient(135deg, var(--neutral-lightest) 0%, #e0e7ff 100%);
     position: relative;
-    min-height: 100vh;
+    min-height: 75vh;
     display: flex;
     align-items: center;
     justify-content: center;
