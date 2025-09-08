@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - LanScape</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- Header and Navigation Bar -->
+    <header id="main-header" class="header-blur sticky top-0 z-50 border-b border-gray-100">
+        <nav id="navbar" class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div id="logo" class="text-2xl font-bold">
+                <a href="index.html" class="flex items-center space-x-2">
+                    <img src="./assets/LOGO/lan3.png" alt="LanScape Logo" style="aspect-ratio: 1.099/1 ; height: 42px; width: 40px;">
+                    <span style="color: var(--primary);">Lan<span style="color: var(--text-dark);">Scape</span></span>
+                </a>
+            </div>
+            <div id="nav-links" class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="nav-link text-gray-600 hover:text-gray-900 font-medium">Home</a>
+                <a href="about.html" class="nav-link active text-gray-600 hover:text-gray-900 font-medium">About Us</a>
+                <a href="projects.html" class="nav-link text-gray-600 hover:text-gray-900 font-medium">Projects</a>
+                <a href="contact.html" class="nav-link text-gray-600 hover:text-gray-900 font-medium">Contact</a>
+            </div>
+            <div id="mobile-menu-button" class="md:hidden">
+                <button class="text-gray-700 focus:outline-none hover:bg-gray-100 p-2 rounded-lg transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 space-y-1 border-t border-gray-100">
+            <a href="index.html" class="block mobile-menu-item text-gray-700 p-3 rounded-lg">Home</a>
+            <a href="about.html" class="block mobile-menu-item text-gray-700 p-3 rounded-lg">About Us</a>
+            <a href="projects.html" class="block mobile-menu-item text-gray-700 p-3 rounded-lg">Projects</a>
+            <a href="contact.html" class="block mobile-menu-item text-gray-700 p-3 rounded-lg">Contact</a>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <!-- About Us Content -->
+        <section id="about-us-content" class="container mx-auto px-6 py-20">
+            <h1 id="about-title" class="text-3xl md:text-5xl font-bold text-center mb-6 fade-in-up">About LanScape</h1>
+            <p id="about-subtitle" class="text-lg md:text-xl text-center max-w-3xl mx-auto mb-20 fade-in-up" style="color: var(--text-light); transition-delay: 100ms;">We are a passionate team of developers, data scientists, and strategists dedicated to solving complex problems with elegant technology.</p>
+            
+            <!-- Mission and Vision -->
+            <div id="mission-vision-section" class="grid md:grid-cols-2 gap-12 mb-24 stagger-children">
+                <div id="our-mission" class="bg-white p-8 rounded-2xl shadow-lg text-center fade-in-up" style="--stagger-delay: 200ms;">
+                    <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-rocket text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4">Our Mission</h3>
+                    <p style="color: var(--text-light);">To empower businesses with transformative AI and software solutions, making advanced technology accessible, understandable, and impactful.</p>
+                </div>
+                <div id="our-vision" class="bg-white p-8 rounded-2xl shadow-lg text-center fade-in-up" style="--stagger-delay: 300ms;">
+                    <div class="w-20 h-20 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-eye text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4">Our Vision</h3>
+                    <p style="color: var(--text-light);">To be a leading partner in digital innovation, creating a future where intelligent systems work seamlessly with human creativity to drive progress.</p>
+                </div>
+            </div>
+
+            <!-- Team Section -->
+            <div id="team-section" class="py-16">
+                <h2 id="team-title" class="text-3xl md:text-4xl font-bold text-center mb-16 fade-in-up">Meet Our Team</h2>
+                <div id="team-grid" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 stagger-children">
+                    <!-- Team Member 1 -->
+                    <div class="text-center team-member fade-in-up" style="--stagger-delay: 100ms;">
+                        <div class="relative mb-6">
+                            <img src="https://placehold.co/400x400/3b82f6/FFFFFF?text=KK" alt="Krishnakant Bhardwaj" class="w-32 h-32 rounded-full mx-auto shadow-lg border-4 border-white">
+                            <div class="absolute -bottom-2 -right-2 w-8 h-8 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center">
+                                <i class="fas fa-crown text-white text-xs"></i>
+                            </div>
+                        </div>
+                        <h4 class="font-bold text-lg mb-1">Krishnakant Bhardwaj</h4>
+                        <p class="text-sm font-medium" style="color: var(--primary);">Chief Executive Officer</p>
+                        <!-- <p class="text-xs mt-2" style="color: var(--text-light);">Visionary leader with 10+ years in tech</p> -->
+                    </div>
+                    <!-- Team Member 2 -->
+                    <div class="text-center team-member fade-in-up" style="--stagger-delay: 200ms;">
+                        <div class="relative mb-6">
+                            <img src="https://placehold.co/400x400/f59e0b/FFFFFF?text=CD" alt="Christopher Dcruz" class="w-32 h-32 rounded-full mx-auto shadow-lg border-4 border-white">
+                            <div class="absolute -bottom-2 -right-2 w-8 h-8 bg-gradient-to-br from-yellow-500 to-orange-500 rounded-full flex items-center justify-center">
+                                <i class="fas fa-cog text-white text-xs"></i>
+                            </div>
+                        </div>
+                        <h4 class="font-bold text-lg mb-1">Christopher Dcruz</h4>
+                        <p class="text-sm font-medium" style="color: var(--primary);">Chief Technology Officer</p>
+                        <!-- <p class="text-xs mt-2" style="color: var(--text-light);">Full-stack architect & cloud expert</p> -->
+                    </div>
+                    <!-- Team Member 3 -->
+                    <div class="text-center team-member fade-in-up" style="--stagger-delay: 300ms;">
+                        <div class="relative mb-6">
+                            <img src="https://placehold.co/400x400/8b5cf6/FFFFFF?text=SK" alt="Sai Krishna" class="w-32 h-32 rounded-full mx-auto shadow-lg border-4 border-white">
+                            <div class="absolute -bottom-2 -right-2 w-8 h-8 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center">
+                                <i class="fas fa-brain text-white text-xs"></i>
+                            </div>
+                        </div>
+                        <h4 class="font-bold text-lg mb-1">Eega Sai Krishna</h4>
+                        <p class="text-sm font-medium" style="color: var(--primary);">Lead AI Scientist</p>
+                        <!-- <p class="text-xs mt-2" style="color: var(--text-light);">PhD in ML, published researcher</p> -->
+                    </div>
+                    <!-- Team Member 4 -->
+                    <div class="text-center team-member fade-in-up" style="--stagger-delay: 400ms;">
+                        <div class="relative mb-6">
+                            <img src="https://placehold.co/400x400/10b981/FFFFFF?text=RK" alt="Raktim Kalita" class="w-32 h-32 rounded-full mx-auto shadow-lg border-4 border-white">
+                            <div class="absolute -bottom-2 -right-2 w-8 h-8 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center">
+                                <i class="fas fa-palette text-white text-xs"></i>
+                            </div>
+                        </div>
+                        <h4 class="font-bold text-lg mb-1">Raktim Kalita</h4>
+                        <p class="text-sm font-medium" style="color: var(--primary);">Head of Design</p>
+                        <!-- <p class="text-xs mt-2" style="color: var(--text-light);">UX/UI expert with creative flair</p> -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Company Values -->
+            <div id="values-section" class="py-16 bg-white rounded-2xl shadow-lg">
+                <div class="px-8 md:px-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 fade-in-up">Our Values</h2>
+                    <div class="grid md:grid-cols-3 gap-8 stagger-children">
+                        <div class="text-center fade-in-up" style="--stagger-delay: 100ms;">
+                            <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mx-auto mb-6">
+                                <i class="fas fa-lightbulb text-white text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-4">Innovation</h3>
+                            <p style="color: var(--text-light);">We constantly push boundaries and explore new technologies to deliver cutting-edge solutions.</p>
+                        </div>
+                        <div class="text-center fade-in-up" style="--stagger-delay: 200ms;">
+                            <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center mx-auto mb-6">
+                                <i class="fas fa-handshake text-white text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-4">Collaboration</h3>
+                            <p style="color: var(--text-light);">We work closely with our clients as partners, ensuring their success becomes our success.</p>
+                        </div>
+                        <div class="text-center fade-in-up" style="--stagger-delay: 300ms;">
+                            <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center mx-auto mb-6">
+                                <i class="fas fa-star text-white text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-4">Excellence</h3>
+                            <p style="color: var(--text-light);">We maintain the highest standards in everything we do, delivering quality that exceeds expectations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="main-footer" class="bg-white border-t border-gray-100">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div id="footer-about" class="md:col-span-1">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <img src="./assets/LOGO/lan3.png" alt="LanScape Logo" style="aspect-ratio: 1.099/1 ; height: 42px; width: 40px;">
+                        <h3 class="text-xl font-bold" style="color: var(--primary);">Lan<span style="color: var(--text-dark);">Scape</span></h3>
+                    </div>
+                    <p class="text-sm mb-4" style="color: var(--text-light);">Building the future with intelligent technology.</p>
+                    <div class="flex space-x-3">
+                        <a href="#" class="w-8 h-8 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-blue-100 transition-colors" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin text-blue-600"></i>
+                        </a>
+                        <a href="#" class="w-8 h-8 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-blue-100 transition-colors" aria-label="Twitter">
+                            <i class="fab fa-twitter text-blue-400"></i>
+                        </a>
+                        <a href="#" class="w-8 h-8 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-gray-200 transition-colors" aria-label="GitHub">
+                            <i class="fab fa-github text-gray-700"></i>
+                        </a>
+                    </div>
+                </div>
+                <div id="footer-links">
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="index.html" class="hover:text-blue-600 transition-colors" style="color: var(--text-light);">Home</a></li>
+                        <li><a href="about.html" class="hover:text-blue-600 transition-colors" style="color: var(--text-light);">About Us</a></li>
+                        <li><a href="projects.html" class="hover:text-blue-600 transition-colors" style="color: var(--text-light);">Projects</a></li>
+                        <li><a href="contact.html" class="hover:text-blue-600 transition-colors" style="color: var(--text-light);">Contact</a></li>
+                    </ul>
+                </div>
+                <div id="footer-services">
+                    <h4 class="font-semibold mb-4">Services</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><span style="color: var(--text-light);">AI Development</span></li>
+                        <li><span style="color: var(--text-light);">Machine Learning</span></li>
+                        <li><span style="color: var(--text-light);">Web Applications</span></li>
+                        <li><span style="color: var(--text-light);">Mobile Apps</span></li>
+                    </ul>
+                </div>
+                <div id="footer-contact">
+                    <h4 class="font-semibold mb-4">Get in Touch</h4>
+                    <div class="space-y-3 text-sm">
+                        <p style="color: var(--text-light);">contact@lanscapeai.com</p>
+                        <p style="color: var(--text-light);">+91 7250820825</p>
+                        <!-- <p style="color: var(--text-light);">123 Innovation Drive<br>Tech City, TX 12345</p> -->
+                    </div>
+                </div>
+            </div>
+            <div id="footer-copyright" class="text-center text-sm mt-8 pt-8 border-t border-gray-100" style="color: var(--text-light);">
+                &copy; 2025 LanScape. All Rights Reserved. 
+            </div>
+        </div>
+    </footer>
+
+    <script src="./app.js"></script>
+</body>
+</html>

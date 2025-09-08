@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LanScape - Custom AI & Software Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Header and Navigation Bar -->
+    <header id="main-header" class="header-blur sticky top-0 z-50 border-b border-gray-100">
+        <nav id="navbar" class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div id="logo" class="text-2xl font-bold">
+                <a href="index.html" class="flex items-center space-x-2">
+
+                    <img src="./assets/LOGO/lan3.png" alt="LanScape Logo" style="aspect-ratio: 1.099/1 ; height: 37px; width: 35px;">
+
+                    <span style="color: var(--primary);">Lan<span style="color: var(--text-dark);">Scape</span></span>
+                </a>
+            </div>
+            <div id="nav-links" class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="nav-link active text-gray-600 hover:text-gray-900 font-medium">Home</a>
+                <a href="about.html" class="nav-link text-gray-600 hover:text-gray-900 font-medium">About Us</a>
+                <a href="projects.html" class="nav-link text-gray-600 hover:text-gray-900 font-medium">Projects</a>
+                <a href="contact.html" class="nav-link text-gray-600 hover:text-gray-900 font-medium">Contact</a>
+            </div>
+            <div id="mobile-menu-button" class="md:hidden">
+                <button class="text-gray-700 focus:outline-none hover:bg-gray-100 p-2 rounded-lg transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 space-y-1 border-t border-gray-100">
+            <a href="index.html" class="block mobile-menu-item text-gray-700 p-3 rounded-lg">Home</a>
+            <a href="about.html" class="block mobile-menu-item text-gray-700 p-3 rounded-lg">About Us</a>
+            <a href="projects.html" class="block mobile-menu-item text-gray-700 p-3 rounded-lg">Projects</a>
+            <a href="contact.html" class="block mobile-menu-item text-gray-700 p-3 rounded-lg">Contact</a>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <!-- Hero Section -->
+        <section id="hero-section"
+            class="hero-bg-fullscreen text-center relative fade-in-up flex items-center justify-center min-h-screen">
+            <div class="container mx-auto px-6 relative z-10">
+                <h1 id="hero-headline" class="text-5xl md:text-7xl lg:text-8xl font-bold mb-8 leading-tight"
+                    style="color: var(--text-dark);">
+                    Building the Future with
+                    <span class="bg-gradient-to-r from-blue-600 to-blue-700 bg-clip-text text-transparent">Intelligent
+                        Technology</span>
+                </h1>
+                <p id="hero-subheadline" class="text-xl md:text-2xl lg:text-3xl max-w-5xl mx-auto mb-12 font-light"
+                    style="color: var(--text-light);">
+                    We architect and deliver cutting-edge AI agents, machine learning models, and bespoke software
+                    solutions to propel your business forward.
+                </p>
+                <div id="hero-cta-buttons" class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+                    <a href="projects.html"
+                        class="btn-primary py-5 px-10 rounded-xl font-semibold text-xl inline-block min-w-[180px]">
+                        <i class="fas fa-rocket mr-3"></i>Our Work
+                    </a>
+                    <a href="contact.html"
+                        class="btn-accent py-5 px-10 rounded-xl font-semibold text-xl inline-block min-w-[180px]">
+                        <i class="fas fa-comments mr-3"></i>Get in Touch
+                    </a>
+                </div>
+
+                <!-- Background Elements -->
+                <div class="absolute inset-0 overflow-hidden">
+                    <div
+                        class="absolute top-20 left-10 w-72 h-72 bg-blue-200 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob">
+                    </div>
+                    <div
+                        class="absolute top-40 right-10 w-72 h-72 bg-purple-200 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob animation-delay-2000">
+                    </div>
+                    <div
+                        class="absolute bottom-20 left-20 w-72 h-72 bg-green-200 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob animation-delay-4000">
+                    </div>
+                </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services-section" class="container mx-auto px-6 py-20">
+            <h2 id="services-title" class="text-3xl md:text-4xl font-bold text-center mb-16 fade-in-up">Our Expertise
+            </h2>
+            <div id="services-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 stagger-children">
+                <!-- Service Card 1 -->
+                <div class="service-card fade-in-up" style="--stagger-delay: 100ms;">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-robot text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4" style="color: var(--primary);">AI Agents & LLMs</h3>
+                    <p style="color: var(--text-light);">Custom-trained large language models and autonomous AI agents
+                        designed to automate complex tasks and enhance user interactions.</p>
+                </div>
+                <!-- Service Card 2 -->
+                <div class="service-card fade-in-up" style="--stagger-delay: 200ms;">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-brain text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4" style="color: var(--primary);">Machine Learning Models</h3>
+                    <p style="color: var(--text-light);">Predictive analytics, computer vision, and NLP models that
+                        unlock valuable insights from your data.</p>
+                </div>
+                <!-- Service Card 3 -->
+                <div class="service-card fade-in-up" style="--stagger-delay: 300ms;">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-laptop-code text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4" style="color: var(--primary);">Web & Mobile Apps</h3>
+                    <p style="color: var(--text-light);">Beautiful, responsive, and scalable applications for web and
+                        mobile platforms that deliver exceptional user experiences.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Showcase Carousel -->
+        <!-- Projects Showcase Carousel - Fully Responsive -->
+        <section id="projects-carousel-section" class="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16 fade-in-up">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Featured Projects</h2>
+                    <p class="text-lg max-w-2xl mx-auto" style="color: var(--text-light);">Discover some of our recent
+                        successful projects and see how we've helped businesses transform with AI and innovative
+                        technology.</p>
+                </div>
+
+                <!-- Carousel Container -->
+                <div class="relative fade-in-up" style="--stagger-delay: 200ms;">
+                    <div class="carousel-wrapper overflow-hidden rounded-2xl">
+                        <div class="carousel-track flex transition-transform duration-500 ease-in-out">
+                            <!-- Project Slide 1 -->
+                            <div class="carousel-slide">
+                                <div
+                                    class="project-card-content bg-white rounded-2xl shadow-lg mx-2 sm:mx-3 lg:mx-4 h-full">
+                                    <div
+                                        class="flex flex-col lg:grid lg:grid-cols-2 gap-6 lg:gap-8 items-center p-6 sm:p-8 lg:p-12">
+                                        <div class="order-2 lg:order-1 w-full">
+                                            <span class="badge badge-blue mb-4 inline-block">Machine Learning</span>
+                                            <h3 class="text-xl sm:text-2xl lg:text-3xl font-bold mb-4">E-commerce
+                                                Recommendation Engine</h3>
+                                            <p class="text-sm sm:text-base lg:text-lg mb-6 leading-relaxed"
+                                                style="color: var(--text-light);">Developed a sophisticated deep
+                                                learning model that analyzes user behavior and preferences to provide
+                                                highly personalized product recommendations, resulting in a 30% increase
+                                                in user engagement and 25% boost in sales conversion.</p>
+                                            <div class="flex flex-wrap gap-2 mb-6">
+                                                <span
+                                                    class="px-2 py-1 sm:px-3 sm:py-1 bg-blue-100 text-blue-800 rounded-full text-xs sm:text-sm font-medium">Python</span>
+                                                <span
+                                                    class="px-2 py-1 sm:px-3 sm:py-1 bg-blue-100 text-blue-800 rounded-full text-xs sm:text-sm font-medium">TensorFlow</span>
+                                                <span
+                                                    class="px-2 py-1 sm:px-3 sm:py-1 bg-blue-100 text-blue-800 rounded-full text-xs sm:text-sm font-medium">AWS</span>
+                                                <span
+                                                    class="px-2 py-1 sm:px-3 sm:py-1 bg-blue-100 text-blue-800 rounded-full text-xs sm:text-sm font-medium">Docker</span>
+                                            </div>
+                                            <a href="projects.html"
+                                                class="btn-primary py-2 px-4 sm:py-3 sm:px-6 rounded-lg font-semibold text-sm sm:text-base inline-block">
+                                                <i class="fas fa-arrow-right mr-2"></i>View Details
+                                            </a>
+                                        </div>
+                                        <div class="order-1 lg:order-2 w-full">
+                                            <div
+                                                class="bg-gradient-to-br from-blue-100 to-blue-200 rounded-2xl p-6 sm:p-8 h-48 sm:h-64 lg:h-80 flex items-center justify-center">
+                                                <div class="text-center">
+                                                    <div
+                                                        class="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                                                        <i
+                                                            class="fas fa-chart-line text-white text-xl sm:text-2xl lg:text-3xl"></i>
+                                                    </div>
+                                                    <div class="space-y-2">
+                                                        <div class="text-2xl sm:text-3xl font-bold text-blue-600">30%
+                                                        </div>
+                                                        <div class="text-xs sm:text-sm text-blue-700">Engagement
+                                                            Increase</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Project Slide 2 -->
+                            <div class="carousel-slide">
+                                <div
+                                    class="project-card-content bg-white rounded-2xl shadow-lg mx-2 sm:mx-3 lg:mx-4 h-full">
+                                    <div
+                                        class="flex flex-col lg:grid lg:grid-cols-2 gap-6 lg:gap-8 items-center p-6 sm:p-8 lg:p-12">
+                                        <div class="order-2 lg:order-1 w-full">
+                                            <span class="badge badge-green mb-4 inline-block">AI Agent</span>
+                                            <h3 class="text-xl sm:text-2xl lg:text-3xl font-bold mb-4">Customer Support
+                                                AI Agent</h3>
+                                            <p class="text-sm sm:text-base lg:text-lg mb-6 leading-relaxed"
+                                                style="color: var(--text-light);">Built an intelligent LLM-powered
+                                                chatbot that understands context and resolves 80% of customer queries
+                                                automatically, dramatically improving response times and customer
+                                                satisfaction while reducing support costs.</p>
+                                            <div class="flex flex-wrap gap-2 mb-6">
+                                                <span
+                                                    class="px-2 py-1 sm:px-3 sm:py-1 bg-green-100 text-green-800 rounded-full text-xs sm:text-sm font-medium">OpenAI
+                                                    GPT</span>
+                                                <span
+                                                    class="px-2 py-1 sm:px-3 sm:py-1 bg-green-100 text-green-800 rounded-full text-xs sm:text-sm font-medium">Node.js</span>
+                                                <span
+                                                    class="px-2 py-1 sm:px-3 sm:py-1 bg-green-100 text-green-800 rounded-full text-xs sm:text-sm font-medium">MongoDB</span>
+                                                <span
+                                                    class="px-2 py-1 sm:px-3 sm:py-1 bg-green-100 text-green-800 rounded-full text-xs sm:text-sm font-medium">React</span>
+                                            </div>
+                                            <a href="projects.html"
+                                                class="btn-primary py-2 px-4 sm:py-3 sm:px-6 rounded-lg font-semibold text-sm sm:text-base inline-block">
+                                                <i class="fas fa-arrow-right mr-2"></i>View Details
+                                            </a>
+                                        </div>
+                                        <div class="order-1 lg:order-2 w-full">
+                                            <div
+                                                class="bg-gradient-to-br from-green-100 to-green-200 rounded-2xl p-6 sm:p-8 h-48 sm:h-64 lg:h-80 flex items-center justify-center">
+                                                <div class="text-center">
+                                                    <div
+                                                        class="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                                                        <i
+                                                            class="fas fa-robot text-white text-xl sm:text-2xl lg:text-3xl"></i>
+                                                    </div>
+                                                    <div class="space-y-2">
+                                                        <div class="text-2xl sm:text-3xl font-bold text-green-600">80%
+                                                        </div>
+                                                        <div class="text-xs sm:text-sm text-green-700">Queries Resolved
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Project Slide 3 -->
+                            <div class="carousel-slide">
+                                <div
+                                    class="project-card-content bg-white rounded-2xl shadow-lg mx-2 sm:mx-3 lg:mx-4 h-full">
+                                    <div
+                                        class="flex flex-col lg:grid lg:grid-cols-2 gap-6 lg:gap-8 items-center p-6 sm:p-8 lg:p-12">
+                                        <div class="order-2 lg:order-1 w-full">
+                                            <span class="badge badge-gray mb-4 inline-block">Web Application</span>
+                                            <h3 class="text-xl sm:text-2xl lg:text-3xl font-bold mb-4">Logistics
+                                                Optimization Platform</h3>
+                                            <p class="text-sm sm:text-base lg:text-lg mb-6 leading-relaxed"
+                                                style="color: var(--text-light);">Created a comprehensive web
+                                                application that uses advanced machine learning algorithms to optimize
+                                                delivery routes in real-time, resulting in 15% fuel cost reduction and
+                                                significantly improved delivery times.</p>
+                                            <div class="flex flex-wrap gap-2 mb-6">
+                                                <span
+                                                    class="px-2 py-1 sm:px-3 sm:py-1 bg-gray-100 text-gray-800 rounded-full text-xs sm:text-sm font-medium">React</span>
+                                                <span
+                                                    class="px-2 py-1 sm:px-3 sm:py-1 bg-gray-100 text-gray-800 rounded-full text-xs sm:text-sm font-medium">Django</span>
+                                                <span
+                                                    class="px-2 py-1 sm:px-3 sm:py-1 bg-gray-100 text-gray-800 rounded-full text-xs sm:text-sm font-medium">PostgreSQL</span>
+                                                <span
+                                                    class="px-2 py-1 sm:px-3 sm:py-1 bg-gray-100 text-gray-800 rounded-full text-xs sm:text-sm font-medium">Redis</span>
+                                            </div>
+                                            <a href="projects.html"
+                                                class="btn-primary py-2 px-4 sm:py-3 sm:px-6 rounded-lg font-semibold text-sm sm:text-base inline-block">
+                                                <i class="fas fa-arrow-right mr-2"></i>View Details
+                                            </a>
+                                        </div>
+                                        <div class="order-1 lg:order-2 w-full">
+                                            <div
+                                                class="bg-gradient-to-br from-purple-100 to-purple-200 rounded-2xl p-6 sm:p-8 h-48 sm:h-64 lg:h-80 flex items-center justify-center">
+                                                <div class="text-center">
+                                                    <div
+                                                        class="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                                                        <i
+                                                            class="fas fa-route text-white text-xl sm:text-2xl lg:text-3xl"></i>
+                                                    </div>
+                                                    <div class="space-y-2">
+                                                        <div class="text-2xl sm:text-3xl font-bold text-purple-600">15%
+                                                        </div>
+                                                        <div class="text-xs sm:text-sm text-purple-700">Cost Reduction
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Carousel Controls -->
+                    <button
+                        class="carousel-btn carousel-prev absolute left-2 sm:left-4 top-1/2 transform -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-50 transition-colors z-10">
+                        <i class="fas fa-chevron-left text-sm sm:text-base" style="color: var(--primary);"></i>
+                    </button>
+                    <button
+                        class="carousel-btn carousel-next absolute right-2 sm:right-4 top-1/2 transform -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-50 transition-colors z-10">
+                        <i class="fas fa-chevron-right text-sm sm:text-base" style="color: var(--primary);"></i>
+                    </button>
+
+                    <!-- Carousel Indicators -->
+                    <div class="flex justify-center mt-6 sm:mt-8 space-x-2 sm:space-x-3">
+                        <button
+                            class="carousel-indicator w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-colors active"
+                            data-slide="0"></button>
+                        <button
+                            class="carousel-indicator w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-colors"
+                            data-slide="1"></button>
+                        <button
+                            class="carousel-indicator w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-colors"
+                            data-slide="2"></button>
+                    </div>
+                </div>
+
+                <!-- Call to Action -->
+                <div class="text-center mt-8 sm:mt-12 fade-in-up" style="--stagger-delay: 400ms;">
+                    <a href="projects.html"
+                        class="btn-accent py-3 px-6 sm:py-4 sm:px-8 rounded-xl font-semibold text-base sm:text-lg inline-block">
+                        <i class="fas fa-folder-open mr-2"></i>View All Projects
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- Why Choose Us Section -->
+        <section id="why-choose-us-section" class="container mx-auto px-6 py-20">
+            <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div id="why-choose-us-text" class="fade-in-up">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-6">Why Partner With Us?</h2>
+                        <p class="mb-8 text-lg" style="color: var(--text-light);">We don't just build software; we build
+                            solutions. Our agile approach ensures we deliver not only what you asked for, but what your
+                            business truly needs to succeed.</p>
+                        <ul class="space-y-6">
+                            <li class="flex items-start">
+                                <div
+                                    class="w-8 h-8 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center mt-1 mr-4 flex-shrink-0">
+                                    <i class="fas fa-check text-white text-sm"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold mb-1">Innovation at Core</h4>
+                                    <p style="color: var(--text-light);">We stay ahead of the tech curve so you can stay
+                                        ahead of your competition.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <div
+                                    class="w-8 h-8 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center mt-1 mr-4 flex-shrink-0">
+                                    <i class="fas fa-check text-white text-sm"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold mb-1">Collaborative Partnership</h4>
+                                    <p style="color: var(--text-light);">Your vision is our blueprint. We work with you
+                                        at every step.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <div
+                                    class="w-8 h-8 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center mt-1 mr-4 flex-shrink-0">
+                                    <i class="fas fa-check text-white text-sm"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold mb-1">Proven Results</h4>
+                                    <p style="color: var(--text-light);">Our portfolio speaks for itself. We deliver
+                                        measurable impact and ROI.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="why-choose-us-image" class="fade-in-up" style="--stagger-delay: 200ms;">
+                        <div class="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-8 text-center">
+                            <div
+                                class="w-32 h-32 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full mx-auto mb-6 flex items-center justify-center">
+                                <i class="fas fa-lightbulb text-white text-4xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold mb-4" style="color: var(--text-dark);">Innovation Driven</h3>
+                            <p style="color: var(--text-light);">Transforming ideas into intelligent solutions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="main-footer" class="bg-white border-t border-gray-100">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div id="footer-about" class="md:col-span-1">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <img src="./assets/LOGO/lan3.png" alt="LanScape Logo" style="aspect-ratio: 1.099/1 ; height: 42px; width: 40px;">
+                        <h3 class="text-xl font-bold" style="color: var(--primary);">Lan<span
+                                style="color: var(--text-dark);">Scape</span></h3>
+                    </div>
+                    <p class="text-sm mb-4" style="color: var(--text-light);">Building the future with intelligent
+                        technology.</p>
+                    <div class="flex space-x-3">
+                        <a href="#"
+                            class="w-8 h-8 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-blue-100 transition-colors"
+                            aria-label="LinkedIn">
+                            <i class="fab fa-linkedin text-blue-600"></i>
+                        </a>
+                        <a href="#"
+                            class="w-8 h-8 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-blue-100 transition-colors"
+                            aria-label="Twitter">
+                            <i class="fab fa-twitter text-blue-400"></i>
+                        </a>
+                        <a href="#"
+                            class="w-8 h-8 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-gray-200 transition-colors"
+                            aria-label="GitHub">
+                            <i class="fab fa-github text-gray-700"></i>
+                        </a>
+                    </div>
+                </div>
+                <div id="footer-links">
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="index.html" class="hover:text-blue-600 transition-colors"
+                                style="color: var(--text-light);">Home</a></li>
+                        <li><a href="about.html" class="hover:text-blue-600 transition-colors"
+                                style="color: var(--text-light);">About Us</a></li>
+                        <li><a href="projects.html" class="hover:text-blue-600 transition-colors"
+                                style="color: var(--text-light);">Projects</a></li>
+                        <li><a href="contact.html" class="hover:text-blue-600 transition-colors"
+                                style="color: var(--text-light);">Contact</a></li>
+                    </ul>
+                </div>
+                <div id="footer-services">
+                    <h4 class="font-semibold mb-4">Services</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><span style="color: var(--text-light);">AI Development</span></li>
+                        <li><span style="color: var(--text-light);">Machine Learning</span></li>
+                        <li><span style="color: var(--text-light);">Web Applications</span></li>
+                        <li><span style="color: var(--text-light);">Mobile Apps</span></li>
+                    </ul>
+                </div>
+                <div id="footer-contact">
+                    <h4 class="font-semibold mb-4">Get in Touch</h4>
+                    <div class="space-y-3 text-sm">
+                        <p style="color: var(--text-light);">contact@lanscapeai.com</p>
+                        <p style="color: var(--text-light);">+91 7250820825</p>
+                        <!-- <p style="color: var(--text-light);">123 Innovation Drive<br>Tech City, TX 12345</p> -->
+                    </div>
+                </div>
+            </div>
+            <div id="footer-copyright" class="text-center text-sm mt-8 pt-8 border-t border-gray-100"
+                style="color: var(--text-light);">
+                &copy; 2025 lanScape. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

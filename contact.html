@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Innovate AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header and Navigation Bar -->
+    <header id="main-header" class="header-blur sticky top-0 z-50 border-b border-gray-100">
+        <nav id="navbar" class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div id="logo" class="text-2xl font-bold">
+                <a href="index.html" class="flex items-center space-x-2">
+                    <img src="./assets/LOGO/lan3.png" alt="LanScape Logo" style="aspect-ratio: 1.099/1 ; height: 42px; width: 40px;">
+                    <span style="color: var(--primary);">Lan<span style="color: var(--text-dark);">Scape</span></span>
+                </a>
+            </div>
+            <div id="nav-links" class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="nav-link text-gray-600 hover:text-gray-900 font-medium">Home</a>
+                <a href="about.html" class="nav-link text-gray-600 hover:text-gray-900 font-medium">About Us</a>
+                <a href="projects.html" class="nav-link text-gray-600 hover:text-gray-900 font-medium">Projects</a>
+                <a href="contact.html" class="nav-link active text-gray-600 hover:text-gray-900 font-medium">Contact</a>
+            </div>
+            <div id="mobile-menu-button" class="md:hidden">
+                <button class="text-gray-700 focus:outline-none hover:bg-gray-100 p-2 rounded-lg transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 space-y-1 border-t border-gray-100">
+            <a href="index.html" class="block mobile-menu-item text-gray-700 p-3 rounded-lg">Home</a>
+            <a href="about.html" class="block mobile-menu-item text-gray-700 p-3 rounded-lg">About Us</a>
+            <a href="projects.html" class="block mobile-menu-item text-gray-700 p-3 rounded-lg">Projects</a>
+            <a href="contact.html" class="block mobile-menu-item text-gray-700 p-3 rounded-lg">Contact</a>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <!-- Contact Section -->
+        <section id="contact-section" class="container mx-auto px-6 py-20">
+            <h1 id="contact-title" class="text-3xl md:text-5xl font-bold text-center mb-6 fade-in-up">Let's Build Something Amazing</h1>
+            <p id="contact-subtitle" class="text-lg md:text-xl text-center max-w-2xl mx-auto mb-16 fade-in-up" style="color: var(--text-light); transition-delay: 100ms;">Have a project in mind or just want to learn more? We'd love to hear from you and discuss how we can help transform your business.</p>
+            
+            <div class="grid lg:grid-cols-3 gap-12">
+                <div id="contact-form-container" class="lg:col-span-2 bg-white p-8 md:p-12 rounded-2xl shadow-xl fade-in-up" style="--stagger-delay: 200ms;">
+                    <h3 class="text-2xl font-bold mb-8">Send us a Message</h3>
+                    <form id="contact-form" class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium mb-3" style="color: var(--text-light);">Full Name *</label>
+                                <input type="text" id="name" name="name" class="form-input w-full" required>
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium mb-3" style="color: var(--text-light);">Email Address *</label>
+                                <input type="email" id="email" name="email" class="form-input w-full" required>
+                            </div>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="company" class="block text-sm font-medium mb-3" style="color: var(--text-light);">Company Name</label>
+                                <input type="text" id="company" name="company" class="form-input w-full">
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-sm font-medium mb-3" style="color: var(--text-light);">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="form-input w-full">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-sm font-medium mb-3" style="color: var(--text-light);">Subject *</label>
+                            <select id="subject" name="subject" class="form-input w-full" required>
+                                <option value="">Select a subject</option>
+                                <option value="ai-development">AI Development</option>
+                                <option value="machine-learning">Machine Learning</option>
+                                <option value="web-development">Web Development</option>
+                                <option value="mobile-development">Mobile Development</option>
+                                <option value="consultation">General Consultation</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="budget" class="block text-sm font-medium mb-3" style="color: var(--text-light);">Project Budget</label>
+                            <select id="budget" name="budget" class="form-input w-full">
+                                <option value="">Select budget range</option>
+                                <option value="under-10k">Under $10,000</option>
+                                <option value="10k-25k">$10,000 - $25,000</option>
+                                <option value="25k-50k">$25,000 - $50,000</option>
+                                <option value="50k-100k">$50,000 - $100,000</option>
+                                <option value="over-100k">Over $100,000</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium mb-3" style="color: var(--text-light);">Project Details *</label>
+                            <textarea id="message" name="message" rows="6" class="form-input w-full" placeholder="Tell us about your project, goals, and any specific requirements..." required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn-primary w-full md:w-auto py-4 px-8 rounded-xl font-semibold text-lg">
+                                <i class="fas fa-paper-plane mr-2"></i>Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                
+                <div id="contact-details-container" class="space-y-8 fade-in-up" style="--stagger-delay: 300ms;">
+                    <div class="bg-white p-6 rounded-2xl shadow-lg">
+                        <h3 class="text-xl font-bold mb-6">Contact Information</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-map-marker-alt text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold mb-1">Our Office</h4>
+                                    <p class="text-sm" style="color: var(--text-light);">Jaipur, Rajasthan<br>303121<br>India</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-envelope text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold mb-1">Email Us</h4>
+                                    <p class="text-sm" style="color: var(--text-light);">contact@lanscapeai.com</p>
+                                    <p class="text-sm" style="color: var(--text-light);">careers@lanscapeai.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-phone text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold mb-1">Call Us</h4>
+                                    <p class="text-sm" style="color: var(--text-light);">+91 7250820825</p>
+                                    <p class="text-xs" style="color: var(--text-light);">Mon-Fri, 9AM-6PM IST</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-2xl shadow-lg">
+                        <h4 class="font-semibold mb-4">Follow Us</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-12 h-12 bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl flex items-center justify-center text-white hover:scale-110 transition-transform" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-500 rounded-xl flex items-center justify-center text-white hover:scale-110 transition-transform" aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-gradient-to-br from-gray-700 to-gray-800 rounded-xl flex items-center justify-center text-white hover:scale-110 transition-transform" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bg-gradient-to-br from-blue-50 to-purple-50 p-6 rounded-2xl">
+                        <h4 class="font-semibold mb-3">Quick Response Promise</h4>
+                        <p class="text-sm" style="color: var(--text-light);">We respond to all inquiries within 24 hours. For urgent projects, call us directly for immediate assistance.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Section -->
+            <div class="mt-20 fade-in-up">
+                <h2 class="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
+                <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <div class="bg-white p-6 rounded-2xl shadow-lg">
+                        <h4 class="font-semibold mb-3">How long does a typical project take?</h4>
+                        <p class="text-sm" style="color: var(--text-light);">Project timelines vary depending on complexity. Simple applications take 4-8 weeks, while complex AI solutions may take 3-6 months.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-lg">
+                        <h4 class="font-semibold mb-3">Do you provide ongoing support?</h4>
+                        <p class="text-sm" style="color: var(--text-light);">Yes, we offer comprehensive maintenance and support packages to ensure your solution continues to perform optimally.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-lg">
+                        <h4 class="font-semibold mb-3">Can you work with existing systems?</h4>
+                        <p class="text-sm" style="color: var(--text-light);">Absolutely! We specialize in integrating new AI solutions with your existing infrastructure and workflows.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-lg">
+                        <h4 class="font-semibold mb-3">What industries do you serve?</h4>
+                        <p class="text-sm" style="color: var(--text-light);">We work across various industries including healthcare, finance, e-commerce, logistics, and manufacturing.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="main-footer" class="bg-white border-t border-gray-100">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div id="footer-about" class="md:col-span-1">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <img src="./assets/LOGO/lan3.png" alt="LanScape Logo" style="aspect-ratio: 1.099/1 ; height: 42px; width: 40px;">
+                        <h3 class="text-xl font-bold" style="color: var(--primary);">Lan<span style="color: var(--text-dark);">Scape</span></h3>
+                    </div>
+                    <p class="text-sm mb-4" style="color: var(--text-light);">Building the future with intelligent technology.</p>
+                    <div class="flex space-x-3">
+                        <a href="#" class="w-8 h-8 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-blue-100 transition-colors" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin text-blue-600"></i>
+                        </a>
+                        <a href="#" class="w-8 h-8 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-blue-100 transition-colors" aria-label="Twitter">
+                            <i class="fab fa-twitter text-blue-400"></i>
+                        </a>
+                        <a href="#" class="w-8 h-8 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-gray-200 transition-colors" aria-label="GitHub">
+                            <i class="fab fa-github text-gray-700"></i>
+                        </a>
+                    </div>
+                </div>
+                <div id="footer-links">
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="index.html" class="hover:text-blue-600 transition-colors" style="color: var(--text-light);">Home</a></li>
+                        <li><a href="about.html" class="hover:text-blue-600 transition-colors" style="color: var(--text-light);">About Us</a></li>
+                        <li><a href="projects.html" class="hover:text-blue-600 transition-colors" style="color: var(--text-light);">Projects</a></li>
+                        <li><a href="contact.html" class="hover:text-blue-600 transition-colors" style="color: var(--text-light);">Contact</a></li>
+                    </ul>
+                </div>
+                <div id="footer-services">
+                    <h4 class="font-semibold mb-4">Services</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><span style="color: var(--text-light);">AI Development</span></li>
+                        <li><span style="color: var(--text-light);">Machine Learning</span></li>
+                        <li><span style="color: var(--text-light);">Web Applications</span></li>
+                        <li><span style="color: var(--text-light);">Mobile Apps</span></li>
+                    </ul>
+                </div>
+                <div id="footer-contact">
+                    <h4 class="font-semibold mb-4">Get in Touch</h4>
+                    <div class="space-y-3 text-sm">
+                        <p style="color: var(--text-light);">contact@lanscapeai.com</p>
+                        <p style="color: var(--text-light);">+91 7250820825</p>
+                        <!-- <p style="color: var(--text-light);">123 Innovation Drive<br>Tech City, TX 12345</p> -->
+                    </div>
+                </div>
+            </div>
+            <div id="footer-copyright" class="text-center text-sm mt-8 pt-8 border-t border-gray-100" style="color: var(--text-light);">
+                &copy; 2025 LanScape. All Rights Reserved. 
+            </div>
+        </div>
+    </footer>
+
+    <script src="./app.js"></script>
+</body>
+</html>

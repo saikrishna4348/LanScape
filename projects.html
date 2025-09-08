@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Projects - LanScape</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header and Navigation Bar -->
+    <header id="main-header" class="header-blur sticky top-0 z-50 border-b border-gray-100">
+        <nav id="navbar" class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div id="logo" class="text-2xl font-bold">
+                <a href="index.html" class="flex items-center space-x-2">
+                    <img src="./assets/LOGO/lan3.png" alt="LanScape Logo" style="aspect-ratio: 1.099/1 ; height: 42px; width: 40px;">
+                    <span style="color: var(--primary);">Lan<span style="color: var(--text-dark);">Scape</span></span>
+                </a>
+            </div>
+            <div id="nav-links" class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="nav-link text-gray-600 hover:text-gray-900 font-medium">Home</a>
+                <a href="about.html" class="nav-link text-gray-600 hover:text-gray-900 font-medium">About Us</a>
+                <a href="projects.html" class="nav-link active text-gray-600 hover:text-gray-900 font-medium">Projects</a>
+                <a href="contact.html" class="nav-link text-gray-600 hover:text-gray-900 font-medium">Contact</a>
+            </div>
+            <div id="mobile-menu-button" class="md:hidden">
+                <button class="text-gray-700 focus:outline-none hover:bg-gray-100 p-2 rounded-lg transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 space-y-1 border-t border-gray-100">
+            <a href="index.html" class="block mobile-menu-item text-gray-700 p-3 rounded-lg">Home</a>
+            <a href="about.html" class="block mobile-menu-item text-gray-700 p-3 rounded-lg">About Us</a>
+            <a href="projects.html" class="block mobile-menu-item text-gray-700 p-3 rounded-lg">Projects</a>
+            <a href="contact.html" class="block mobile-menu-item text-gray-700 p-3 rounded-lg">Contact</a>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <!-- Projects Showcase -->
+        <section id="projects-showcase" class="container mx-auto px-6 py-20">
+            <h1 id="projects-title" class="text-3xl md:text-5xl font-bold text-center mb-6 fade-in-up">Our Portfolio</h1>
+            <p class="text-lg md:text-xl text-center max-w-3xl mx-auto mb-16 fade-in-up" style="color: var(--text-light);">Discover our latest projects and see how we've helped businesses transform with AI and innovative technology solutions.</p>
+            
+            <div id="projects-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 stagger-children">
+                <!-- Project Card 1 -->
+                <div class="project-card fade-in-up" style="--stagger-delay: 100ms;">
+                    <div class="h-48 bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center">
+                        <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center">
+                            <i class="fas fa-chart-line text-white text-2xl"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="badge badge-blue">Machine Learning</span>
+                        <h3 class="text-xl font-bold my-3">E-commerce Recommendation Engine</h3>
+                        <p class="text-sm mb-4" style="color: var(--text-light);">Developed a deep learning model to provide personalized product recommendations, increasing user engagement by 30% and revenue by 25%.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex space-x-2">
+                                <span class="text-xs px-2 py-1 bg-gray-100 rounded">Python</span>
+                                <span class="text-xs px-2 py-1 bg-gray-100 rounded">TensorFlow</span>
+                            </div>
+                            <i class="fas fa-arrow-right" style="color: var(--primary);"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Card 2 -->
+                <div class="project-card fade-in-up" style="--stagger-delay: 200ms;">
+                    <div class="h-48 bg-gradient-to-br from-green-100 to-green-200 flex items-center justify-center">
+                        <div class="w-20 h-20 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center">
+                            <i class="fas fa-robot text-white text-2xl"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="badge badge-green">AI Agent</span>
+                        <h3 class="text-xl font-bold my-3">Customer Support AI Agent</h3>
+                        <p class="text-sm mb-4" style="color: var(--text-light);">Built an LLM-powered chatbot that resolves 80% of customer queries automatically, improving response times and customer satisfaction scores.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex space-x-2">
+                                <span class="text-xs px-2 py-1 bg-gray-100 rounded">OpenAI</span>
+                                <span class="text-xs px-2 py-1 bg-gray-100 rounded">Node.js</span>
+                            </div>
+                            <i class="fas fa-arrow-right" style="color: var(--primary);"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Card 3 -->
+                <div class="project-card fade-in-up" style="--stagger-delay: 300ms;">
+                    <div class="h-48 bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center">
+                        <div class="w-20 h-20 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center">
+                            <i class="fas fa-route text-white text-2xl"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="badge badge-gray">Web App</span>
+                        <h3 class="text-xl font-bold my-3">Logistics Optimization Software</h3>
+                        <p class="text-sm mb-4" style="color: var(--text-light);">A custom web application that uses machine learning algorithms to optimize delivery routes, cutting fuel costs by 15% and improving delivery times.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex space-x-2">
+                                <span class="text-xs px-2 py-1 bg-gray-100 rounded">React</span>
+                                <span class="text-xs px-2 py-1 bg-gray-100 rounded">Django</span>
+                            </div>
+                            <i class="fas fa-arrow-right" style="color: var(--primary);"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Card 4 -->
+                <div class="project-card fade-in-up" style="--stagger-delay: 400ms;">
+                    <div class="h-48 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center">
+                        <div class="w-20 h-20 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center">
+                            <i class="fas fa-mobile-alt text-white text-2xl"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="badge badge-blue">Mobile App</span>
+                        <h3 class="text-xl font-bold my-3">Healthcare Monitoring App</h3>
+                        <p class="text-sm mb-4" style="color: var(--text-light);">A cross-platform mobile app for patients to track vitals and communicate with doctors in real-time, improving patient outcomes and engagement.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex space-x-2">
+                                <span class="text-xs px-2 py-1 bg-gray-100 rounded">React Native</span>
+                                <span class="text-xs px-2 py-1 bg-gray-100 rounded">Firebase</span>
+                            </div>
+                            <i class="fas fa-arrow-right" style="color: var(--primary);"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Card 5 -->
+                <div class="project-card fade-in-up" style="--stagger-delay: 500ms;">
+                    <div class="h-48 bg-gradient-to-br from-indigo-100 to-indigo-200 flex items-center justify-center">
+                        <div class="w-20 h-20 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-full flex items-center justify-center">
+                            <i class="fas fa-file-alt text-white text-2xl"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="badge badge-green">AI Agent</span>
+                        <h3 class="text-xl font-bold my-3">Automated Data Entry Bot</h3>
+                        <p class="text-sm mb-4" style="color: var(--text-light);">An intelligent agent that extracts information from invoices and PDFs with 95% accuracy, saving hundreds of manual hours per month.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex space-x-2">
+                                <span class="text-xs px-2 py-1 bg-gray-100 rounded">OCR</span>
+                                <span class="text-xs px-2 py-1 bg-gray-100 rounded">NLP</span>
+                            </div>
+                            <i class="fas fa-arrow-right" style="color: var(--primary);"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Card 6 -->
+                <div class="project-card fade-in-up" style="--stagger-delay: 600ms;">
+                    <div class="h-48 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
+                        <div class="w-20 h-20 bg-gradient-to-br from-gray-600 to-gray-700 rounded-full flex items-center justify-center">
+                            <i class="fas fa-warehouse text-white text-2xl"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="badge badge-gray">Custom Software</span>
+                        <h3 class="text-xl font-bold my-3">Inventory Management System</h3>
+                        <p class="text-sm mb-4" style="color: var(--text-light);">Bespoke desktop software for a large warehouse to track inventory with predictive ordering features, reducing stockouts by 40%.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex space-x-2">
+                                <span class="text-xs px-2 py-1 bg-gray-100 rounded">C#</span>
+                                <span class="text-xs px-2 py-1 bg-gray-100 rounded">.NET</span>
+                            </div>
+                            <i class="fas fa-arrow-right" style="color: var(--primary);"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="text-center mt-16 fade-in-up">
+                <h2 class="text-2xl md:text-3xl font-bold mb-4">Ready to Start Your Project?</h2>
+                <p class="text-lg mb-8" style="color: var(--text-light);">Let's discuss how we can help transform your business with AI and innovative technology.</p>
+                <a href="contact.html" class="btn-primary py-4 px-8 rounded-xl font-semibold text-lg inline-block">
+                    <i class="fas fa-rocket mr-2"></i>Get Started Today
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="main-footer" class="bg-white border-t border-gray-100">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div id="footer-about" class="md:col-span-1">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <img src="./assets/LOGO/lan3.png" alt="LanScape Logo" style="aspect-ratio: 1.099/1 ; height: 42px; width: 40px;">
+                        <h3 class="text-xl font-bold" style="color: var(--primary);">Lan<span style="color: var(--text-dark);">Scape</span></h3>
+                    </div>
+                    <p class="text-sm mb-4" style="color: var(--text-light);">Building the future with intelligent technology.</p>
+                    <div class="flex space-x-3">
+                        <a href="#" class="w-8 h-8 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-blue-100 transition-colors" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin text-blue-600"></i>
+                        </a>
+                        <a href="#" class="w-8 h-8 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-blue-100 transition-colors" aria-label="Twitter">
+                            <i class="fab fa-twitter text-blue-400"></i>
+                        </a>
+                        <a href="#" class="w-8 h-8 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-gray-200 transition-colors" aria-label="GitHub">
+                            <i class="fab fa-github text-gray-700"></i>
+                        </a>
+                    </div>
+                </div>
+                <div id="footer-links">
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="index.html" class="hover:text-blue-600 transition-colors" style="color: var(--text-light);">Home</a></li>
+                        <li><a href="about.html" class="hover:text-blue-600 transition-colors" style="color: var(--text-light);">About Us</a></li>
+                        <li><a href="projects.html" class="hover:text-blue-600 transition-colors" style="color: var(--text-light);">Projects</a></li>
+                        <li><a href="contact.html" class="hover:text-blue-600 transition-colors" style="color: var(--text-light);">Contact</a></li>
+                    </ul>
+                </div>
+                <div id="footer-services">
+                    <h4 class="font-semibold mb-4">Services</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><span style="color: var(--text-light);">AI Development</span></li>
+                        <li><span style="color: var(--text-light);">Machine Learning</span></li>
+                        <li><span style="color: var(--text-light);">Web Applications</span></li>
+                        <li><span style="color: var(--text-light);">Mobile Apps</span></li>
+                    </ul>
+                </div>
+                <div id="footer-contact">
+                    <h4 class="font-semibold mb-4">Get in Touch</h4>
+                    <div class="space-y-3 text-sm">
+                        <p style="color: var(--text-light);">contact@lanscapeai.com</p>
+                        <p style="color: var(--text-light);">+91 7250820825</p>
+                        <!-- <p style="color: var(--text-light);">123 Innovation Drive<br>Tech City, TX 12345</p> -->
+                    </div>
+                </div>
+            </div>
+            <div id="footer-copyright" class="text-center text-sm mt-8 pt-8 border-t border-gray-100" style="color: var(--text-light);">
+                &copy; 2025 LanScape. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="./app.js"></script>
+</body>
+</html>
