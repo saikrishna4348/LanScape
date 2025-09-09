@@ -101,6 +101,21 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+let lastScrollY = window.scrollY;
+const header = document.getElementById('main-header');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > lastScrollY && window.scrollY > 80) {
+        // Scrolling down
+        header.style.transform = 'translateY(-100%)';
+        header.style.transition = 'transform 0.3s cubic-bezier(0.4,0,0.2,1)';
+    } else {
+        // Scrolling up
+        header.style.transform = 'translateY(0)';
+        header.style.transition = 'transform 0.3s cubic-bezier(0.4,0,0.2,1)';
+    }
+    lastScrollY = window.scrollY;
+});
 
 
 // Simplified Working Carousel functionality
