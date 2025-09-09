@@ -623,7 +623,7 @@ body.loading {
     }
     
     .hero-bg-fullscreen {
-        /* min-height: 90vh; */
+        min-height: 75vh;
         padding-top: 2rem;
         padding-bottom: 2rem;
     }
