@@ -521,7 +521,7 @@ a[href^="#"]:hover {
 
 /* Smooth focus indicators */
 *:focus {
-    outline: 2px solid var(--primary);
+    /* outline: 2px solid var(--primary); */
     outline-offset: 2px;
     border-radius: 4px;
     transition: all 0.2s ease;
@@ -796,7 +796,7 @@ a, button, .service-card, .project-card, .team-member {
 .btn-accent:focus,
 button:focus,
 a:focus {
-    outline: 2px solid var(--primary);
+    /* outline: 2px solid var(--primary); */
     outline-offset: 2px;
 }
 
